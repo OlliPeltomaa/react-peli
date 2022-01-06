@@ -10,13 +10,13 @@ function App() {
     )
   }
 
-
-
-
-
   return (
     <div className="App">
       <Header/>
+      <GameContext.Provider value={{score, setScore, gameState, setGameState, gameMode, setGameMode}}>
+        {gameState == "menu" && <Menu/>}
+        {gameState == "quiz" && <Quiz/>}
+      </GameContext.Provider>
     </div>
   );
 }
