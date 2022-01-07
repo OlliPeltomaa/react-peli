@@ -18,3 +18,5 @@ let net = new Country('Alankomaat', 17134872);
 let bel = new Country('Belgia', 11589623);
 let cze = new Country('Tsekki', 10708981);
 let gre = new Country('Kreikka', 10423054);
+
+export const Ctrs = [rus, ger, uk, fra, ita, spa, ukr, pol, rom, net, bel, cze, gre];
