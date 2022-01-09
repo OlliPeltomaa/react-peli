@@ -23,9 +23,6 @@ export default function Menu() {
             startGame('asia');
             }}>Aasia</button>
             <button className="sel" onClick={() => {
-            startGame('africa');
-            }}>Afrikka</button>
-            <button className="sel" onClick={() => {
             startGame('all');
             }}>Kaikki</button>
         </div>

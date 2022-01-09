@@ -36,6 +36,8 @@ button:hover {
 
 .sel, .opt {
   width: clamp(200px, 10vw, 300px);
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 2vh;
   padding: calc(7px + 1vh);
 }
@@ -43,6 +45,8 @@ button:hover {
 .btn {
   width: clamp(200px, 10vw, 300px);
   margin-bottom: 2vh;
+  margin-left: auto;
+  margin-right: auto;
   padding: calc(7px + 1vh);
   background-color: darkgray;
 }
