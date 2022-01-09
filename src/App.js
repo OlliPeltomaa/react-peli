@@ -3,6 +3,7 @@ import React, {useState, useContext} from 'react';
 import { GameContext } from './support/gameContext';
 import Menu from './Components/Menu';
 import Quiz from './Components/Quiz';
+import Endscreen from './Components/Endscreen';
 
 function App() {
   const [ gameState, setGameState ] = useState("menu");
@@ -21,6 +22,7 @@ function App() {
       <GameContext.Provider value={{score, setScore, gameState, setGameState, gameMode, setGameMode}}>
         {gameState === "menu" && <Menu/>}
         {gameState === "quiz" && <Quiz/>}
+        {gameState === "endscreen" && <Endscreen/>}
       </GameContext.Provider>
     </div>
   );

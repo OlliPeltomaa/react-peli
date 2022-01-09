@@ -12,6 +12,8 @@ export default function Menu() {
 
     return (
         <div id="menu" className="comp">
+            <p id="info">Paina valtiota, jonka väkiluvun uskot olevan suurin ja katso kuinka pitkälle pääset
+            painamatta väärää vastausta!</p>
             <h3>Valitse peli</h3>
             <button className="sel" onClick={() => {
             startGame('europe');

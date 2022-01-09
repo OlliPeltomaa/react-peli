@@ -12,13 +12,7 @@ body {
   background-color: #C1666B;
 }
 
-button {
-  background-color: white;
-  border: solid 1px gray;
-  border-radius: calc(1px + 1vw);
-}
-
-button:hover {
+.sel:hover, .opt:hover {
   cursor: pointer;
   background-color: lightgray;
 }
@@ -40,6 +34,9 @@ button:hover {
   margin-right: auto;
   margin-bottom: 2vh;
   padding: calc(7px + 1vh);
+  background-color: white;
+  border: solid 1px gray;
+  border-radius: calc(1px + 1vw);
 }
 
 .btn {
@@ -49,8 +46,19 @@ button:hover {
   margin-right: auto;
   padding: calc(7px + 1vh);
   background-color: darkgray;
+  border-radius: calc(1px + 1vw);
+  border: solid 1px gray;
 }
 
+.btn:hover {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
+
+#result {
+  margin-bottom: 5vh;
+}
 
 h3 {
   margin-top: 5vh;
@@ -68,4 +76,13 @@ h3 {
 #score {
   margin-top: 2vh;
   margin-bottom: 2vh;
+}
+
+#menu {
+  margin-bottom: 5vh;
+}
+
+#info {
+  width: clamp(200px, 30vw, 400px);
+  margin-top: 5vh;
 }

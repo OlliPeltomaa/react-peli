@@ -62,10 +62,10 @@ export default function Quiz() {
 
 
     const endGame = () => {
-        setScore(0);
         emptyOpts();
+        setGameMode("");
         console.log('häviö');
-        setGameState('menu');
+        setGameState('endscreen');
     }
 
     const populateOptions = () => {
@@ -105,7 +105,7 @@ export default function Quiz() {
             <button className="opt" data-popl="0" onClick={() => 
             handleClick(3)}></button>
             <button className="btn" data-popl="0" onClick={() =>
-            backToMenu()}>Takaisin valikkoon</button>
+            backToMenu()}>Päävalikkoon</button>
         </div>
     );
 }
